@@ -181,9 +181,9 @@
       		<h5 class="blue" data-dealerName="<?php echo $dealer_name; ?>"><a href="#!" class="dealer-directory-modal-form" <?php if($dealer_email) { ?>data-open="dealer-modal"<?php } ?>><?php echo $dealer_name; ?></a></h5>
       		<ul class="dealer-meta">
       			<li><address><i class="fas fa-map-marker-alt"></i> &nbsp;<?php echo $dealer_street; ?><br> <?php echo $dealer_city; ?>, <?php echo $dealer_state; ?> <?php echo $dealer_zip; ?></address></li>
-      			<li><address><i class="fas fa-phone"></i> &nbsp;<?php echo $dealer_phone; ?></address></li>
+      			<li><address><i class="fas fa-phone"></i> &nbsp;<a href="tel:+1-<?php echo $dealer_phone; ?>"><?php echo $dealer_phone; ?></a></address></li>
       			<?php if($dealer_email) { ?>
-      			  <li class="email" data-dealerEmail="<?php echo $dealer_email; ?>"><address><i class="fas fa-envelope"></i> &nbsp;<?php echo $dealer_email; ?></address></li>
+      			  <li class="email" data-dealerEmail="<?php echo $dealer_email; ?>"><address><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:<?php echo $dealer_email; ?>"><?php echo $dealer_email; ?></a></address></li>
       			<?php } ?>
       		
       		<?php if( has_term('sunscape','designation',$dealer->ID) || has_term('safety-shield','designation',$dealer->ID) || has_term('madico-choice','designation',$dealer->ID) ){ ?>
