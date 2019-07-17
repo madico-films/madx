@@ -174,3 +174,8 @@ function body_class_x( $classes ) {
  
     return $classes;
 }
+ 
+add_action( 'madico_scripts', 'madico_scripts_x' );
+function madico_scripts_x( $classes ) {
+	echo '<script src="'.get_template_directory_uri().'/dist/assets/js/pardot.js?ver='.filemtime(get_template_directory().'/dist/assets/js/pardot.js').'"></script>';
+}
