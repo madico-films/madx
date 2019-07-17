@@ -111,6 +111,6 @@
 <?php wp_footer(); ?>
 <script src="//cdn.leadmanagerfx.com/js/mcfx/2201" type="text/javascript"></script>
 <script type='text/javascript' src='//cdn.leadmanagerfx.com/phone/js/2201'></script>
+<?php do_action('madico_scripts'); ?>
 </body>
 </html>
-
