@@ -79,7 +79,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>
 
-<?php wp_footer(); ?>
 <script src="//cdn.leadmanagerfx.com/js/mcfx/2201" type="text/javascript"></script>
 <script type='text/javascript' src='//cdn.leadmanagerfx.com/phone/js/2201'></script>
 
