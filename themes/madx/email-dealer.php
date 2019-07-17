@@ -9,7 +9,10 @@ $dealer_email = $_POST['dealerEmail'];
 
 $to      = $dealer_email;
 $subject = "Inquiry from Madico Dealer Directory";
-$headers = "From: noreply@madico.com\n";
+
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "From: noreply@madico.com\n";
+$headers .= 'Bcc: dealer-results-form@madico.com' . "\r\n";
 
 $body = <<<EOD
 First Name: $first_name
